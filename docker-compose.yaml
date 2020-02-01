@@ -1,0 +1,10 @@
+version: "2"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./:/var/www
+    container_name: laravel-hash-maker
+    tty: true
